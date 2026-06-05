@@ -375,7 +375,12 @@
       nav { padding: 16px 24px; }
       .nav-links { display: none; }
       section { padding: 72px 24px; }
-      .who-grid, .services-grid, .why-grid, .footer-top { grid-template-columns: 1fr; }
+      .who-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+      .who-card { padding: 24px 20px; }
+      .who-body { display: none; }
+      .who-icon { font-size: 1.5rem; margin-bottom: 10px; }
+      .who-title { font-size: 1.05rem; }
+      .services-grid, .why-grid, .footer-top { grid-template-columns: 1fr; }
       .why-img-accent, .why-badge { display: none; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
       .gallery-item.tall { grid-row: span 1; }
