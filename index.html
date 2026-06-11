@@ -301,6 +301,57 @@
     .result-title { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--black); margin-bottom: 8px; }
     .result-body { font-size: 0.82rem; color: rgba(0,0,0,0.62); line-height: 1.65; }
 
+    /* ── Pricing Packages ──────────────────────────────────────────────────── */
+    #pricing { background: var(--dark); padding: 100px 48px; }
+    #pricing .section-inner { max-width: 900px; margin: 0 auto; }
+
+    /* Trial callout bar */
+    .pricing-trial {
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+      background: #1a1a1a; border: 1.5px solid var(--orange);
+      border-radius: 10px; padding: 18px 24px; margin: 48px 0 40px;
+    }
+    .pricing-trial-badge {
+      background: var(--orange); color: #fff; font-size: 0.7rem;
+      font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 20px; white-space: nowrap;
+    }
+    .pricing-trial-text {
+      flex: 1; min-width: 220px;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .pricing-trial-text strong {
+      color: #fff; font-size: 0.95rem; font-weight: 600;
+    }
+    .pricing-trial-text span {
+      color: var(--muted); font-size: 0.8rem; line-height: 1.5;
+    }
+    .pricing-trial-btn {
+      white-space: nowrap; font-size: 0.78rem; padding: 10px 20px;
+    }
+
+    /* PDF embed */
+    .pricing-embed-wrap {
+      width: 100%; border-radius: 10px; overflow: hidden;
+      border: 1px solid #2a2a2a;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    .pricing-pdf {
+      width: 100%; height: 780px; border: none; display: block;
+      background: #f0e8d8;
+    }
+
+    /* Action buttons */
+    .pricing-actions {
+      display: flex; gap: 16px; justify-content: center;
+      margin-top: 32px; flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .pricing-trial { flex-direction: column; align-items: flex-start; }
+      .pricing-pdf { height: 480px; }
+    }
+
     /* ── CTA Banner ────────────────────────────────────────────────────────── */
     #cta { position: relative; overflow: hidden; padding: 130px 48px; text-align: center; }
     .cta-bg {
@@ -408,6 +459,7 @@
       <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
       <a href="#why">Why It Matters</a>
+      <a href="#pricing">Pricing</a>
       <a href="#cta" class="nav-cta">Book a Strategy Call</a>
     </div>
   </nav>
@@ -669,6 +721,50 @@
           <h3 class="result-title">Global Spotlight</h3>
           <p class="result-body">Be part of Houston's World Cup story — with content that positions you as the venue fans remember.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing Packages ─────────────────────────────────────────────────── -->
+  <section id="pricing">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">World Cup Coverage Packages</p>
+        <h2 class="section-title">Simple Pricing.<br/><em>Powerful Results.</em></h2>
+        <p class="section-body">
+          Three tiers designed for EaDO bars, restaurants, and event venues — from a single match-day
+          shoot to full tournament coverage. Every package includes fast turnaround, online gallery
+          delivery, and content built to work across social media, sponsorship pitches, and future advertising.
+        </p>
+      </div>
+
+      <!-- New Client Trial Callout -->
+      <div class="pricing-trial">
+        <div class="pricing-trial-badge">New Client Offer</div>
+        <div class="pricing-trial-text">
+          <strong>Free 45-Minute On-Site Content Preview Session</strong>
+          <span>Experience our work firsthand — we'll capture your venue in action and deliver 25–30 professionally retouched images at no cost. New clients only · Limited availability.</span>
+        </div>
+        <a href="https://docs.google.com/forms/d/1dH5ESjV51CZ-iqQs1DsraIh2WpYKjVrjpU1iqD4llv8" target="_blank" class="btn-primary pricing-trial-btn">Claim Your Free Session</a>
+      </div>
+
+      <!-- PDF Embed -->
+      <div class="pricing-embed-wrap">
+        <iframe
+          src="WorldCup2026_Packages.pdf"
+          class="pricing-pdf"
+          title="Lee Rivers Digital Art — Houston World Cup 2026 Coverage Packages"
+        ></iframe>
+      </div>
+
+      <!-- Download + CTA buttons -->
+      <div class="pricing-actions">
+        <a href="WorldCup2026_Packages.pdf" download class="btn-primary">
+          ⬇ Download Pricing Guide
+        </a>
+        <a href="https://docs.google.com/forms/d/1dH5ESjV51CZ-iqQs1DsraIh2WpYKjVrjpU1iqD4llv8" target="_blank" class="btn-outline">
+          Express Your Interest
+        </a>
       </div>
     </div>
   </section>
